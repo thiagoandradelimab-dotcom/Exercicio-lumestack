@@ -14,6 +14,8 @@ let awsConfig = {
   default: undefined,
 };
 
+
+
 try {
   awsConfig = require(path.join(__dirname, "./aws-exports-es5.js"));
 } catch (e) {}
@@ -111,4 +113,5 @@ export default defineConfig({
       return config;
     },
   },
+  
 });
